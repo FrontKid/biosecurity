@@ -1,0 +1,16 @@
+.local {
+  position: relative;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.eng {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

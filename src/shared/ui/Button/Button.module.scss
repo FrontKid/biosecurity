@@ -1,0 +1,32 @@
+@use '../../../app/styles/helpers/variables.scss' as *;
+@use '../../../app/styles/helpers/functions.scss' as func;
+
+.button {
+  cursor: pointer;
+  padding: func.toRem(15) func.toRem(30);
+  border-radius: 40px;
+  width: 100%;
+  font-weight: 500;
+  border: func.toRem(1) solid transparent;
+}
+
+.bgLightGreen {
+  background-color: $light-green;
+}
+
+.bgBlack {
+  background-color: $black;
+}
+
+.txtBlack {
+  color: $black;
+}
+
+.txtWhite {
+  color: $white;
+}
+
+.bgTransparent {
+  background-color: rgba(210, 220, 59, 0.2);
+  border-color: $white;
+}

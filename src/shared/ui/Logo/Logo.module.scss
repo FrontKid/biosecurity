@@ -1,0 +1,17 @@
+@use '../../../app/styles/helpers/variables.scss' as *;
+@use '../../../app/styles/helpers/functions.scss' as func;
+
+.link {
+  display: block;
+}
+
+.icon {
+  display: block;
+  @media (min-width: $m-screen) {
+    width: func.toRem(150);
+  }
+
+  @media (min-width: $lg-screen) {
+    width: func.toRem(186);
+  }
+}
