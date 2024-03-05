@@ -1,8 +1,10 @@
 import Link from 'next/link';
 
 import { Button } from '@/shared/ui/Button';
+import { ItemsList } from '@/shared/ui/ItemsList';
 import { Logo } from '@/shared/ui/Logo';
 
+import { infoList, menuList } from '../../model/itemsList';
 import css from './TopFooter.module.scss';
 
 const TopFooter = () => (
@@ -12,44 +14,8 @@ const TopFooter = () => (
         <Logo className={css.logo} />
 
         <div className={css.infoContent}>
-          <div className='information'>
-            <h3 className={css.infoTitle}>Information</h3>
-            <ul className={css.list}>
-              <li>
-                <Link href='/faq'>FAQ</Link>
-              </li>
-              <li>
-                <Link href='/price'>Prices</Link>
-              </li>
-              <li>
-                <Link href='/partners'>Partners</Link>
-              </li>
-              <li>
-                <Link href='/support'>Support</Link>
-              </li>
-              <li>
-                <Link href='/contacts'>Contacts us</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className='menu'>
-            <h3 className={css.menuTitle}>Menu</h3>
-            <ul className={css.list}>
-              <li>
-                <Link href='/'>Home</Link>
-              </li>
-              <li>
-                <Link href='#about-us'>Producer</Link>
-              </li>
-              <li>
-                <Link href='#'>Veterinarian</Link>
-              </li>
-              <li>
-                <Link href='#'>Service providers</Link>
-              </li>
-            </ul>
-          </div>
+          <ItemsList list={infoList} title='Information' />
+          <ItemsList list={menuList} title='menu' />
         </div>
       </div>
 
