@@ -6,7 +6,7 @@
     "start": "next dev",
     "build": "next build",
     "preview": "vite preview",
-    "lint": "eslint \"**/*.{ts,tsx}\" --fix --max-warnings 0",
+    "lint": "eslint \"**/*.{ts,tsx}\" --fix --max-warnings 0 --ignore-path src/app/styles/helpers/normalize.scss",
     "format": "prettier . --write",
     "check": "branch-name-lint branch-lint.json",
     "prepare": "husky"

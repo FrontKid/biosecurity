@@ -7,15 +7,15 @@
 
   @media (min-width: $m-screen) {
     display: block;
-    min-width: func.toRem(440);
+    min-width: func.to-rem(440);
   }
 
   @media (min-width: $lg-screen) {
-    min-width: func.toRem(495);
+    min-width: func.to-rem(495);
   }
 }
 
 .list {
   @include flexible(space-between);
-  font-size: func.toRem(16);
+  font-size: func.to-rem(16);
 }

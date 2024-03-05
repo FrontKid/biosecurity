@@ -9,19 +9,19 @@
 html {
   font-size: calc(100vw / 376 * $default-font);
 
-  @media (min-width: 500px) {
+  @media (width >= 500px) {
     font-size: calc(100vw / 500 * $default-font);
   }
 
-  @media (min-width: 767px) {
+  @media (width >= 767px) {
     font-size: calc(100vw / 767 * $default-font);
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     font-size: calc(100vw / 1024 * $default-font);
   }
 
-  @media (min-width: 1440px) {
+  @media (width >= 1440px) {
     font-size: calc(100vw / 1440 * $default-font);
   }
 }
@@ -61,20 +61,20 @@ footer {
   padding-left: 16px;
   padding-right: 16px;
 
-  @media (min-width: 500px) {
+  @media (width >= 500px) {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     padding-left: 26px;
     padding-right: 26px;
   }
 
-  @media (min-width: 1440px) {
-    max-width: func.toRem(1440);
-    padding-left: func.toRem(27);
-    padding-right: func.toRem(27);
+  @media (width >= 1440px) {
+    max-width: func.to-rem(1440);
+    padding-left: func.to-rem(27);
+    padding-right: func.to-rem(27);
     margin: auto;
   }
 }

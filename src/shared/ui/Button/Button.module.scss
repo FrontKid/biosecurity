@@ -3,11 +3,11 @@
 
 .button {
   cursor: pointer;
-  padding: func.toRem(15) func.toRem(30);
+  padding: func.to-rem(15) func.to-rem(30);
   border-radius: 40px;
   width: 100%;
   font-weight: 500;
-  border: func.toRem(1) solid transparent;
+  border: func.to-rem(1) solid transparent;
 }
 
 .bgLightGreen {

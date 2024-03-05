@@ -3,8 +3,8 @@
 @use '../../../../app/styles/helpers/functions.scss' as func;
 
 .header {
-  padding-top: func.toRem(12);
-  padding-bottom: func.toRem(12);
+  padding-top: func.to-rem(12);
+  padding-bottom: func.to-rem(12);
 }
 
 .local,
@@ -25,34 +25,28 @@
   @include flexible(space-between);
 
   @media (min-width: $m-screen) {
-    min-width: func.toRem(620);
+    min-width: func.to-rem(620);
   }
 
   @media (min-width: $lg-screen) {
-    min-width: func.toRem(760);
+    min-width: func.to-rem(760);
   }
 }
 
 .rightHeader {
   @media (min-width: $m-screen) {
     @include flexible(space-between);
-    column-gap: func.toRem(20);
-    min-width: func.toRem(242);
+    column-gap: func.to-rem(20);
+    min-width: func.to-rem(242);
   }
 }
 
 .signIn {
-  @media (min-width: $m-screen) {
-    width: 60px;
-  }
-
-  @media (min-width: $lg-screen) {
-    width: 50px;
-  }
+  width: func.to-rem(51);
 }
 
 .signUp {
   @media (min-width: $m-screen) {
-    max-width: func.toRem(119);
+    max-width: func.to-rem(119);
   }
 }
