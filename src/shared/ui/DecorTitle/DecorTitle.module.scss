@@ -7,7 +7,7 @@
 
 .default {
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
   background-image: url('./images/cover-text.png');
   background-repeat: no-repeat;
   background-size: cover;
