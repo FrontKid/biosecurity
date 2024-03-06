@@ -1,5 +1,9 @@
 import { FC, ReactNode } from 'react';
 
+import cn from 'classnames';
+
+import css from './HomeLayout.module.scss';
+
 type THomeLayoutProps = {
   hero?: ReactNode;
   biosecurityIs?: ReactNode;
@@ -16,7 +20,7 @@ const HomeLayout: FC<THomeLayoutProps> = (props) => {
       <section className='container'>{props.hero}</section>
       <section className='container'>{props.biosecurityIs}</section>
       <section>
-        <div className='containr'>{props.slider}</div>
+        <div className='container'>{props.slider}</div>
       </section>
       <section>
         <div className='container'>{props.producer}</div>
@@ -25,7 +29,7 @@ const HomeLayout: FC<THomeLayoutProps> = (props) => {
       <section>
         <div className='container'>{props.serviceProvider}</div>
       </section>
-      <section className='container'>{props.aboutUs}</section>
+      <section className={cn('container', css.about)}>{props.aboutUs}</section>
     </main>
   );
 };
