@@ -1,12 +1,22 @@
 @use '../styles/helpers/functions.scss' as func;
 @use '../styles/helpers/variables.scss' as *;
 
+.biosecurityIs {
+  padding-top: func.to-rem(30);
+  padding-bottom: func.to-rem(30);
+
+  @media (min-width: $m-screen) {
+    padding-top: func.to-rem(100);
+    padding-bottom: func.to-rem(85);
+  }
+}
+
 .about {
   padding-top: func.to-rem(30);
   padding-bottom: func.to-rem(60);
 
   @media (min-width: $m-screen) {
-    padding-top: func.to-rem(100);
-    padding-bottom: func.to-rem(85);
+    padding-top: func.to-rem(200);
+    padding-bottom: func.to-rem(200);
   }
 }

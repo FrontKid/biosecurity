@@ -18,7 +18,7 @@ const HomeLayout: FC<THomeLayoutProps> = (props) => {
   return (
     <main>
       <section className='container'>{props.hero}</section>
-      <section className='container'>{props.biosecurityIs}</section>
+      <section className={cn('container', css.biosecurityIs)}>{props.biosecurityIs}</section>
       <section>
         <div className='container'>{props.slider}</div>
       </section>
