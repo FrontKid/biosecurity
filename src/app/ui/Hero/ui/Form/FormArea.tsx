@@ -3,6 +3,7 @@
 import cn from 'classnames';
 import { Form, Formik } from 'formik';
 
+import { validateEmail, validateName } from '@/shared/lib/validateForm';
 import { Button } from '@/shared/ui/Button';
 import { CustomInput } from '@/shared/ui/CustomInput';
 
@@ -16,26 +17,6 @@ interface IInitialFields {
 const initialFields: IInitialFields = {
   name: '',
   email: '',
-};
-
-const validateName = (name: string) => {
-  const REG_EXP = /^[a-zA-Z][a-zA-Z0-9-]+$/;
-
-  if (!name) {
-    return 'Required';
-  } else if (!REG_EXP.test(name)) {
-    return 'Incorect validate';
-  }
-};
-
-const validateEmail = (email: string) => {
-  const REG_EXP = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
-
-  if (!email) {
-    return 'Required';
-  } else if (!REG_EXP.test(email)) {
-    return 'Incorect validate';
-  }
 };
 
 const FormArea = () => {
