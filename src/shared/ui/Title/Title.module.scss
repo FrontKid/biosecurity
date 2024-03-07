@@ -2,7 +2,6 @@
 @use '../../../app/styles/helpers/functions.scss' as func;
 
 .title {
-  font-style: italic;
   font-weight: 500;
   font-size: func.to-rem(40);
   line-height: 2.22;

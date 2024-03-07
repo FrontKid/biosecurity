@@ -23,6 +23,7 @@
 
 .title {
   text-align: center;
+  font-style: italic;
 
   @media (min-width: $m-screen) {
     margin-bottom: func.to-rem(20);
