@@ -18,7 +18,7 @@ type THomeLayoutProps = {
 
 const HomeLayout: FC<THomeLayoutProps> = (props) => (
   <main>
-    <section className='container'>{props.hero}</section>
+    <section className={cn('container', css.hero)}>{props.hero}</section>
     <section className={cn('container', css.biosecurityIs)}>{props.biosecurityIs}</section>
     <section>
       <div className='container'>{props.slider}</div>
@@ -26,7 +26,7 @@ const HomeLayout: FC<THomeLayoutProps> = (props) => (
     <GradientSection>
       <div className={cn('container', css.multiSection)}>{props.producer}</div>
     </GradientSection>
-    <div className={cn('container', css.multiSection)}>{props.veterinarian}</div>
+    <section className={cn('container', css.multiSection)}>{props.veterinarian}</section>
     <GradientSection>
       <div className={cn('container', css.multiSection)}>{props.serviceProvider}</div>
     </GradientSection>

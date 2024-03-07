@@ -3,6 +3,7 @@ import { Title2 } from '@/shared/ui/Title';
 
 import { About } from './ui/About';
 import { BiosecurityIs } from './ui/BiosecurityIs';
+import { Hero } from './ui/Hero';
 import { HomeLayout } from './ui/HomeLayout';
 import { MultiSection } from './ui/MultiSection/MultiSection';
 import { content } from './ui/MultiSection/model/content';
@@ -11,7 +12,7 @@ import { List } from './ui/MultiSection/ui/List';
 export default function Home() {
   return (
     <HomeLayout
-      hero={null}
+      hero={<Hero />}
       biosecurityIs={<BiosecurityIs />}
       slider={null}
       producer={

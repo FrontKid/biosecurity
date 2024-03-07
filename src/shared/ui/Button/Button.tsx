@@ -8,12 +8,15 @@ import css from './Button.module.scss';
 
 type TBgColor = 'lightGreen' | 'black' | 'tr';
 type TTxtColor = 'white' | 'black';
+type TButtonType = 'button' | 'submit' | 'reset';
 
 type TButtonProps = {
   children: ReactNode;
   color?: TBgColor;
   txtColor?: TTxtColor;
   className?: string;
+  type?: TButtonType;
+  onClick?: (e: React.MouseEvent) => void;
 };
 
 const bgColors = {
@@ -32,9 +35,15 @@ const Button: FC<TButtonProps> = ({
   color = 'black',
   txtColor = 'white',
   className = '',
+  onClick = () => {},
+  type = 'button',
 }) => {
   return (
-    <button className={cn(className, css.button, bgColors[color], txtColors[txtColor])}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={cn(className, css.button, bgColors[color], txtColors[txtColor])}
+    >
       {children}
     </button>
   );
