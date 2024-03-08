@@ -59,7 +59,7 @@
   border: func.to-rem(1) solid $black;
   resize: none;
   padding: func.to-rem(8) func.to-rem(24) func.to-rem(8) func.to-rem(16);
-  border-radius: 12px;
+  border-radius: func.to-rem(12);
   height: 100%;
   font-size: func.to-rem(12);
   line-height: 1.4;

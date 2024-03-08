@@ -21,7 +21,9 @@ const TopFooter = () => (
       </div>
 
       <address className={css.requestCall}>
-        <Button className={css.requestButton}>Request a call</Button>
+        <Button to='/request-call' className={css.requestButton}>
+          Request a call
+        </Button>
 
         <Link href='tel:+1 226-622-2799' className={css.requestCallContacts}>
           +1 226-622-2799

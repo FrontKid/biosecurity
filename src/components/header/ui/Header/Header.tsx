@@ -26,10 +26,10 @@ const Header = () => {
         </div>
         <div className={css.rightHeader}>
           <Localization className={css.local} />
-          <Link className={css.signIn} href='/signIn'>
+          <Link className={css.signIn} href='/request-call'>
             Sign In
           </Link>
-          <Button className={css.signUp} color='lightGreen' txtColor='black'>
+          <Button to='/request-call' className={css.signUp} color='lightGreen' txtColor='black'>
             Sign Up
           </Button>
           <BurgerIcon setOpen={setOpen} />

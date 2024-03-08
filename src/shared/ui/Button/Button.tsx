@@ -3,6 +3,7 @@
 import { FC, ReactNode } from 'react';
 
 import cn from 'classnames';
+import Link from 'next/link';
 
 import css from './Button.module.scss';
 
@@ -16,6 +17,7 @@ type TButtonProps = {
   txtColor?: TTxtColor;
   className?: string;
   type?: TButtonType;
+  to?: string;
   onClick?: (e: React.MouseEvent) => void;
 };
 
@@ -35,10 +37,11 @@ const Button: FC<TButtonProps> = ({
   color = 'black',
   txtColor = 'white',
   className = '',
+  to = '',
   onClick = () => {},
   type = 'button',
 }) => {
-  return (
+  return !to ? (
     <button
       type={type}
       onClick={onClick}
@@ -46,6 +49,10 @@ const Button: FC<TButtonProps> = ({
     >
       {children}
     </button>
+  ) : (
+    <Link className={cn(className, css.button, bgColors[color], txtColors[txtColor])} href={to}>
+      {children}
+    </Link>
   );
 };
 

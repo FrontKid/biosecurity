@@ -18,4 +18,14 @@ const validateEmail = (email: string) => {
   }
 };
 
-export { validateName, validateEmail };
+const validatePhone = (number: string) => {
+  const REG_EXP = /^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/;
+
+  if (!number) {
+    return 'Required';
+  } else if (!REG_EXP.test(number)) {
+    return 'Incorect validate';
+  }
+};
+
+export { validateName, validateEmail, validatePhone };

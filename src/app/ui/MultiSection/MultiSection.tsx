@@ -26,7 +26,9 @@ const MultiSection: FC<TMultiSectionProps> = (props) => {
         <p>{props.text}</p>
         {props.list}
 
-        <Button className={css.button}>Sign up</Button>
+        <Button to='/request-call' className={css.button}>
+          Sign up
+        </Button>
       </div>
       <div className={css.imageBlock}>{props.imageWidget}</div>
     </div>

@@ -51,6 +51,7 @@
 .imageInner {
   position: relative;
   padding-bottom: func.to-rem(28);
+  width: 100%;
 
   @media (min-width: $sm-screen) {
     padding-bottom: func.to-rem(38);

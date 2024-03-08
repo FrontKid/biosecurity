@@ -33,7 +33,7 @@
 .content {
   padding: func.to-rem(30) func.to-rem(17);
   background-color: $white;
-  border-radius: 16px;
+  border-radius: func.to-rem(16);
   margin-bottom: func.to-rem(30);
 }
 

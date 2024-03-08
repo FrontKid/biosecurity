@@ -4,10 +4,12 @@
 .button {
   cursor: pointer;
   padding: func.to-rem(15) func.to-rem(30);
-  border-radius: 40px;
+  border-radius: func.to-rem(40);
   width: 100%;
   font-weight: 500;
   border: func.to-rem(1) solid transparent;
+  font-style: inherit;
+  text-align: center;
 }
 
 .bgLightGreen {
