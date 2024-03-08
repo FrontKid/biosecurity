@@ -21,7 +21,7 @@ const HomeLayout: FC<THomeLayoutProps> = (props) => (
     <section className={cn('container', css.hero)}>{props.hero}</section>
     <section className={cn('container', css.biosecurityIs)}>{props.biosecurityIs}</section>
     <section>
-      <div className='container'>{props.slider}</div>
+      <div className={cn('container', css.slider)}>{props.slider}</div>
     </section>
     <GradientSection>
       <div className={cn('container', css.multiSection)}>{props.producer}</div>

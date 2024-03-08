@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 import { DecorTitle } from '@/shared/ui/DecorTitle';
 
+import { anoxicFont } from '../../../../../shared/lib/font';
 import photo1 from '../../../../images/home-page/hero/healthyPeoples1.png';
 import photo2 from '../../../../images/home-page/hero/healthyPeoples2.png';
 import photo3 from '../../../../images/home-page/hero/healthyPeoples3.png';
 import css from './Heading.module.scss';
-import { anoxicFont } from './lib/font';
 
 const Heading = () => {
   return (

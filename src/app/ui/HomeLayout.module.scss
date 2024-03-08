@@ -11,6 +11,16 @@
   }
 }
 
+.slider {
+  padding-top: func.to-rem(30);
+  padding-bottom: func.to-rem(60);
+
+  @media (min-width: $m-screen) {
+    padding-top: func.to-rem(100);
+    padding-bottom: func.to-rem(85);
+  }
+}
+
 .biosecurityIs {
   padding-top: func.to-rem(30);
   padding-bottom: func.to-rem(30);

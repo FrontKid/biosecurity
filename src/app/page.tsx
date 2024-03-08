@@ -8,13 +8,14 @@ import { HomeLayout } from './ui/HomeLayout';
 import { MultiSection } from './ui/MultiSection/MultiSection';
 import { content } from './ui/MultiSection/model/content';
 import { List } from './ui/MultiSection/ui/List';
+import { Slider } from './ui/Slider';
 
 export default function Home() {
   return (
     <HomeLayout
       hero={<Hero />}
       biosecurityIs={<BiosecurityIs />}
-      slider={null}
+      slider={<Slider />}
       producer={
         <MultiSection
           title={<Title2>Producer</Title2>}
