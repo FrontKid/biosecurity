@@ -44,6 +44,10 @@
   }
 }
 
+.imagesInner {
+  padding-bottom: func.to-rem(40);
+}
+
 .imageInner {
   position: relative;
   padding-bottom: func.to-rem(28);
@@ -100,12 +104,6 @@
   }
 }
 
-.pagContainer {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
 .bottomDesc {
   display: block;
   font-style: italic;
@@ -117,4 +115,25 @@
     max-width: func.to-rem(770);
     margin: func.to-rem(60) auto 0;
   }
+}
+
+.paginationContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.paginationButton {
+  cursor: pointer;
+  display: block;
+  height: func.to-rem(8);
+  width: func.to-rem(8);
+  border-radius: 50%;
+  background-color: #4d4d4d70;
+}
+
+.paginationButtonActive {
+  background-color: $black;
 }

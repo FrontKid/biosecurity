@@ -1,10 +1,11 @@
 import Link from 'next/link';
 
+import { menuList } from '@/shared/model/itemsList';
 import { Button } from '@/shared/ui/Button';
 import { ItemsList } from '@/shared/ui/ItemsList';
 import { Logo } from '@/shared/ui/Logo';
 
-import { infoList, menuList } from '../../model/itemsList';
+import { infoList } from '../../model/itemsList';
 import css from './TopFooter.module.scss';
 
 const TopFooter = () => (

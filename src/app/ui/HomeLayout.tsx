@@ -20,9 +20,9 @@ const HomeLayout: FC<THomeLayoutProps> = (props) => (
   <main>
     <section className={cn('container', css.hero)}>{props.hero}</section>
     <section className={cn('container', css.biosecurityIs)}>{props.biosecurityIs}</section>
-    <section>
+    <GradientSection color='gray'>
       <div className={cn('container', css.slider)}>{props.slider}</div>
-    </section>
+    </GradientSection>
     <GradientSection>
       <div className={cn('container', css.multiSection)}>{props.producer}</div>
     </GradientSection>

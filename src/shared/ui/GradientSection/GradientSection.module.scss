@@ -1,4 +1,18 @@
+@use '../../../app/styles/helpers/variables.scss' as *;
+
 .section {
-  background: linear-gradient(188deg, #ffffff 7%, #d2dc3b 37.92%, #ffffff 86%);
   border-radius: 60px;
+}
+
+.green {
+  background: linear-gradient(188deg, #ffffff 7%, #d2dc3b 37.92%, #ffffff 86%);
+}
+
+.gray {
+  border-radius: 30px 30px 0 0;
+  background: linear-gradient(180deg, #d4d4d4 0%, #ffffff 100%);
+
+  @media (min-width: $m-screen) {
+    border-radius: 140px 140px 0 0;
+  }
 }

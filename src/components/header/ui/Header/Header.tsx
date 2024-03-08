@@ -1,15 +1,22 @@
+'use client';
+
+import { useState } from 'react';
+
 import cn from 'classnames';
 import Link from 'next/link';
 
+import { Burger } from '@/app/ui/Burger';
 import { Button } from '@/shared/ui/Button';
 import { Logo } from '@/shared/ui/Logo';
 
-import { Burger } from '../Burger';
+import { BurgerIcon } from '../BurgerIcon';
 import { Localization } from '../Localization';
 import { Navbar } from '../Navbar';
 import css from './Header.module.scss';
 
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <header className={cn('container', css.header)}>
       <div className={css.inner}>
@@ -25,10 +32,10 @@ const Header = () => {
           <Button className={css.signUp} color='lightGreen' txtColor='black'>
             Sign Up
           </Button>
-
-          <Burger />
+          <BurgerIcon setOpen={setOpen} />
         </div>
       </div>
+      {isOpen && <Burger isOpen={isOpen} setClose={setOpen} />}
     </header>
   );
 };
