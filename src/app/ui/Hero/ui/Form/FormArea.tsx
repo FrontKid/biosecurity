@@ -72,7 +72,7 @@ const FormArea = () => {
               Sign in
             </Button>
             <span className={css.or}>Or</span>
-            <Button to='/request-call' type='button' color='lightGreen'>
+            <Button className={css.signUp} to='/request-call' type='button' color='lightGreen'>
               Sign up
             </Button>
           </div>

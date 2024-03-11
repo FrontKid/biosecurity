@@ -11,13 +11,13 @@
 
 .layout {
   background-color: $light-green;
-  padding: func.to-rem(55) func.to-rem(20) func.to-rem(34) func.to-rem(20);
+  padding: func.to-rem(118) func.to-rem(20) func.to-rem(34) func.to-rem(20);
 
   @media (min-width: $m-screen) {
     border-radius: func.to-rem(60);
     margin-bottom: func.to-rem(20);
 
-    padding-top: func.to-rem(84);
+    padding-top: func.to-rem(163.2);
     padding-bottom: func.to-rem(96);
   }
 }

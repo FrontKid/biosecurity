@@ -16,22 +16,22 @@ const Navbar: FC<TNavbarProps> = () => {
           </Link>
         </li>
         <li className={css.item}>
-          <Link className={css.link} href='#producer'>
+          <Link className={css.link} href='/#producer'>
             Producer
           </Link>
         </li>
         <li className={css.item}>
-          <Link className={css.link} href='#veterinarian'>
+          <Link className={css.link} href='/#veterinarian'>
             Veterinarian
           </Link>
         </li>
         <li className={css.item}>
-          <Link className={css.link} href='#service-providers'>
+          <Link className={css.link} href='/#service-providers'>
             Service providers
           </Link>
         </li>
         <li className={css.item}>
-          <Link className={css.link} href='/support'>
+          <Link className={css.link} href='/request-call'>
             Support
           </Link>
         </li>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import cn from 'classnames';
 import Link from 'next/link';
@@ -9,6 +9,7 @@ import { Burger } from '@/app/ui/Burger';
 import { Button } from '@/shared/ui/Button';
 import { Logo } from '@/shared/ui/Logo';
 
+import { handleScroll } from '../../lib/handleScroll';
 import { BurgerIcon } from '../BurgerIcon';
 import { Localization } from '../Localization';
 import { Navbar } from '../Navbar';
@@ -16,9 +17,30 @@ import css from './Header.module.scss';
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const refHeader = useRef(null);
+
+  useEffect(() => {
+    global.addEventListener('scroll', () => handleScroll(refHeader));
+
+    return () => {
+      global.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+
+    if (isOpen) {
+      body?.classList.add(css.overflow);
+
+      return;
+    }
+
+    body?.classList.remove(css.overflow);
+  }, [isOpen]);
 
   return (
-    <header className={cn('container', css.header)}>
+    <header ref={refHeader} className={cn('container', css.header)}>
       <div className={css.inner}>
         <div className={css.leftHeader}>
           <Logo />
